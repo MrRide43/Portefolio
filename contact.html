@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Police Jakarta-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!--Fin Police Jakarta-->
+    <title>Alex.div</title>
+    <!-- Inclusion du fichier css pour le style du jeu -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- Attention, l'ordre des fichiers js est important.  -->
+    <!--<script src="main.js" defer></script> -->
+</head>
+<body>
+    <header class="header">
+        <div id="Bloc_header">
+            <a href="index.html" id="Bloc_logo"></a>
+            <nav id="navbar">
+                <ul>
+                    <a class="Lien_navbar" href="index.html#sectionPresentation"><li>A propos</li></a>
+                    <a class="Lien_navbar" href="index.html#services"><li>Services</li></a>
+                    <a class="Lien_navbar" href="#projet"><li>Projets</li></a>
+                    <div class="Bloc_Lien_animationFlèche">
+                        <a class="Lien_navbar" href="contact.html"><li>Réservez un appel</li></a>
+                        <img src="image/flèche_droite.svg" alt="flèche animation">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Formulaire de contact-->
+
+    <section id="formulaireContact">
+        <div class="flexContact">
+            <div class="sectionGauchecontact">
+                <h1 class="titreContact">Contacter moi</h1>
+                <p>Remplissez ce formulaire pour discuter ou poser vos questions. Contactez-moi, je répondrai rapidement !</p>
+                <div class="CoordoneesContact">
+                    <img src="image/svgcontact.svg">
+                    <p>alexis43h.hertault@gmail.com</p>
+                </div>
+                <div class="CoordoneesContact">
+                    <img src="image/telephonecontact.svg">
+                    <p>06.32.74.85.10</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="prenom" aria-label="Votre prénom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom" aria-label="Votre Nom">Nom de famille</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom de famille" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" aria-label="Votre mail">Votre e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" aria-label="Votre message">Dis-moi un peu plus ce que vous recherchez ?</label>
+                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <div class="blocLienIntro">
+                    <a href="" class="boutonIntro">Envoyé !</a>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <footer>
+        
+        <h3>Prêt à faire quelque chose de génial? <br> <a href="contact.html" class="contactFooter couleurGradiant">Contactez moi.</a></h3>
+
+        <div class="bloc_coordonees">
+            <div>
+                <ul>
+                    <li><h4 class="titreFooter">Coordonnées:</h4></li>
+                    <li><address>numéro: 06.32.74.85.10</address></li>
+                    <li><a href="mailto:alexis43h.hertault@gmail.com">alexis43h.hertault@gmail.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html#sectionPresentation">A propos</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexis-hertault-920270221/">Linkedin</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html#projet">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.facebook.com/hertault.alexis/?locale=fr_FR">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>

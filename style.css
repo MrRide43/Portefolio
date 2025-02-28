@@ -1,0 +1,1165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Section header */
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    padding-top: 40px;
+}
+
+#Bloc_header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+.Lien_navbar {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+.Lien_navbar:hover {
+    color: #666;
+}
+
+.Bloc_Lien_animationFlèche {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Bloc_Lien_animationFlèche img {
+    transition: transform 0.3s ease;
+}
+
+.Bloc_Lien_animationFlèche:hover img {
+    transform: translateX(10px);
+}
+
+#Bloc_logo {
+    width: 252px;
+    background-image: url(image/logo_new_alexis.webp);
+    background-size: cover;
+    margin-top: 17px;
+}
+
+/* Fin Section header */
+
+/* Section introduction */
+#introduction {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1700px;
+}
+
+.bloc_introduction {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Partie Titre */
+h1 {
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 4.375rem; /* 70px en rem pour accessibilité */
+}
+
+.couleurGradiant {
+    background: linear-gradient(to right, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+.textIntroduction {
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 1.375rem; /* 22px en rem */
+    color: #666;
+    text-align: justify;
+}
+
+/* Fin Partie Titre */
+
+/* Réglage gradient & animation bouton Intro */
+
+/* Conteneur principal */
+.blocLienIntro {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style du bouton (partie noire) */
+.boutonIntro {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem; /* 16px 32px en rem */
+    border: none;
+    font-size: 1rem; /* 16px en rem */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* Fond dégradé derrière le bouton */
+.blocLienIntro::before {
+    content: "";
+    position: absolute;
+    top: 0.3125rem; /* 5px en rem */
+    left: 0.5rem; /* 8px en rem */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation au hover */
+.boutonIntro:hover {
+    transform: translate(-0.3125rem, -0.3125rem); /* -5px en rem */
+}
+
+.photo_profil {
+    max-width: 37.5rem; /* 600px en rem */
+    height: auto;
+}
+
+/* Réglage gradient & animation bouton Intro */
+
+/* Fin Section introduction */
+
+/* Section Services */
+#services {
+    width: 100%;
+    padding-top: 6rem;
+}
+
+#titreH3services {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;    
+    font-size: 2.1875rem; /* 35px en rem */
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;    
+    background-size: 14% auto;
+}
+
+.titreh2Services {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;    
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 3.4375rem; /* 55px en rem */
+    padding-top: 3rem;
+}
+
+.detail_services {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 5.625rem; /* 90px en rem */
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+.bloc_details_services {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc_details_services img {
+    width: 5.625rem; /* 90px en rem */
+    height: 5.625rem; /* 90px en rem */
+}
+
+.bloc_details_services ul {
+    padding-left: 0.9375rem; /* 15px en rem */
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+/* Fin Section Services */
+
+/* Section projet */
+#titreH3projet {
+    display: flex;
+    margin: auto;    
+    font-size: 1.75rem; /* 28px en rem */
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;    
+    background-size: 20% auto;
+    text-transform: uppercase;
+}
+
+.bloc_projet {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloc_projet h2 {
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 2.8125rem; /* 45px en rem */
+    width: 49.25rem; /* 500px en rem */
+}
+
+/* Réglage gradient & animation bouton Section projet */
+
+/* Conteneur principal */
+.blocLienProjet {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style du bouton (partie noire) */
+.boutonProjet {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem; /* 16px 32px en rem */
+    border: none;
+    font-size: 1rem; /* 16px en rem */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* Fond dégradé derrière le bouton */
+.blocLienProjet::before {
+    content: "";
+    position: absolute;
+    top: 0.3125rem; /* 5px en rem */
+    left: 0.5rem; /* 8px en rem */
+    width: 100%;
+    height: 27%;
+    background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation au hover */
+.boutonProjet:hover {
+    transform: translate(-0.3125rem, -0.3125rem); /* -5px en rem */
+}
+
+/* Réglage gradient & animation bouton Section projet */
+
+/* Section carrousel */
+.relative {
+    position: relative;
+}
+
+.rooms_navigation {
+    transition: 0.3s;
+    position: absolute;
+    top: calc(50% - 25px);
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.rooms_navigation.prev {
+    left: -30px; /* Position à gauche du carrousel */
+}
+
+.rooms_navigation.next {
+    right: -35px; /* Position à droite du carrousel */
+}
+
+/* Pour ajuster l’apparence des boutons si nécessaire */
+.rooms_navigation img {
+    width: 40%; /* Assure que les images SVG s’adaptent au bouton */
+    height: 40%;
+    object-fit: contain; /* Garde les proportions des SVG */
+}
+
+.container {
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding: 3rem 0;
+}
+
+.rooms {
+    display: flex;
+    --items: 2;
+    --gap: 1rem;
+    gap: var(--gap);
+    overflow-x: auto;
+    padding: calc(var(--gap) * 0.5);
+    margin: calc(var(--gap) * -0.5);
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: calc(var(--gap) * 0.5);
+    -ms-overflow-style: none; /* Pour IE et Edge */
+    scrollbar-width: none; /* Pour Firefox */
+}
+
+.rooms::-webkit-scrollbar {
+    display: none;
+}
+
+.room {
+    min-width: calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
+    scroll-snap-align: start;
+}
+
+@media (max-width: 1000px) {
+    .rooms {
+        padding: 1rem;
+        margin: 1rem;
+        scroll-padding-inline: 0;
+    }
+
+    .room {
+        scroll-snap-align: center;
+        min-width: 350px;
+        background-color: #f7f7f7;
+    }
+}
+
+.lienprojet {
+    text-decoration: none;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.imageProjet {
+    width: 500px;
+    height: 300px;
+}
+
+.blocInfoprojet {
+    padding-left: 0.9375rem; /* 15px en rem */
+}
+
+#titreH4projet {
+    display: flex;
+    margin: auto;    
+    font-size: 1.25rem; /* 20px en rem */
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;    
+    background-size: 27% auto;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.room h5 {
+    font-size: 1.5rem; /* 24px en rem */
+    margin: 1.25rem 0; /* 20px en rem */
+}
+
+/* Fin Section carrousel */
+
+/* Fin Section projet */
+
+/* Section de présentation */
+#sectionPresentation {
+    background-color: black;
+}
+
+.blocPresentation {
+    width: 80%;
+    margin: auto;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+#sectionPresentation h3 {
+    font-size: 1.875rem; /* 30px en rem */
+}
+
+.textPresentation {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.textPresentation p {
+    width: 36.625rem; /* 330px en rem */
+    font-size: 1.25rem; /* 20px en rem */
+    color: #666;
+}
+
+.textPresentation h2 {
+    font-size: 2.5rem; /* 40px en rem */
+}
+
+.bloc_container-image-projet {
+    display: flex;
+    gap: 1.25rem; /* 20px en rem */
+    margin: auto;
+    width: 80%;
+    padding: 1.875rem 0; /* 30px en rem */
+}
+
+.bloc_image_projet {
+    width: 25rem; /* 400px en rem */
+    height: 31.25rem; /* 500px en rem */
+    overflow: hidden;
+}
+
+.bloc_image_projet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.Bloc_image_projet_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0625rem; /* 1px en rem, ajuste si nécessaire */
+    height: 31.25rem; /* 500px en rem */
+}
+
+.Bloc_image_projet_column img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fin Section de présentation */
+
+/* Section de Expérience professionnels */
+#ExperiencePro {
+    background-color: #f7f7f7;
+    padding: 1.875rem 0; /* 30px en rem */
+}
+
+.bloctitreExperience {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titreH3experience {
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 1.875rem; /* 30px en rem */
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: 50% 50%; /* 40% pour la gauche, 60% pour le formulaire */
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+.experience-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-block {
+    gap: 1.25rem; /* 20px en rem */
+    padding: 0.625rem 0; /* 10px en rem */
+    position: relative;
+}
+
+.left-section {
+    padding-right: 0;
+    background-color: white;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem; /* 15px en rem */
+}
+
+.left-section h4, .right-section h4 {
+    margin: 0 0 0.3125rem 0; /* 5px en rem */
+    color: #000000;
+    font-size: 1.1em;
+}
+
+.subtext-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.subtext {
+    color: #666666;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.left-section .date {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.role-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.role {
+    margin: 0 0 0.3125rem 0; /* 5px en rem */
+    color: #666666;
+    font-size: 0.9em;
+}
+
+.job-info .date {
+    margin: 0;
+    color: #666666;
+    font-size: 0.9em;
+}
+
+/* Animation de box-shadow au hover */
+.left-section,
+.right-section {
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 0.625rem; /* 10px en rem */
+}
+
+.left-section:hover,
+.right-section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fin Section de Expérience professionnels */
+
+/* Section footer */
+footer {
+    background-color: black;
+    padding: 0 0 1.875rem 0; /* 30px en rem */
+}
+
+footer h3 {
+    width: 80%;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 1.875rem; /* 30px en rem */
+    color: white;
+    margin: auto;
+    padding: 3.75rem 0 1.875rem 0; /* 60px 0 30px 0 en rem */
+}
+
+.titreFooter {
+    margin: 0;
+}
+
+.contactFooter {
+    text-decoration: none;
+    position: relative;
+    color: white;      
+}
+
+.contactFooter::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.1875rem; /* 3px en rem */
+    bottom: -0.25rem; /* -4px en rem */
+    left: 0;
+    background: linear-gradient(to right, #b16cea, #ff5e69, #ff8e56, #ffa87b); /* Dégradé de gauche à droite */
+    transition: width 0.2s ease-in-out; /* Animation fluide */
+}
+
+.contactFooter:hover::after {
+    width: 100%; /* Le soulignement s'étend sur toute la largeur du texte au hover */
+}
+
+.contactFooter:hover {
+    background: linear-gradient(to right, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Rend le texte transparent pour montrer le dégradé */
+    text-decoration: none; /* Supprime le soulignement par défaut si besoin */
+}
+
+.bloc_coordonees {
+    color: white;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+    font-size: 1.25rem; /* 20px en rem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.bloc_coordonees ul {
+    list-style-type: none;
+    line-height: 2.5rem;
+    padding: 0;
+}
+
+.bloc_coordonees a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.bloc_coordonees a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.125rem; /* 2px en rem */
+    bottom: -0.4375rem; /* -7px en rem */
+    left: 0;
+    background: white; /* Dégradé de gauche à droite */
+    transition: width 0.2s ease-in-out; /* Animation fluide */
+}
+
+.bloc_coordonees a:hover::after {
+    width: 100%; /* Le soulignement s'étend sur toute la largeur du texte au hover */
+}
+
+/* Media Queries (responsive pour tablettes et mobiles) */
+
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding-top: 20px;
+    }
+
+    #Bloc_header {
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .Bloc_Lien_animationFlèche {
+        margin-top: 0;
+    }
+
+    #Bloc_logo {
+        margin-top: 10px;
+        width: 150px; /* Réduire la taille du logo */
+        height: 50px;
+        background-image: url(image/logo_new_alexis.webp);
+        background-size: contain; /* Utilise "contain" pour s’assurer que l’image s’adapte */
+        background-repeat: no-repeat; /* Évite la répétition */
+        background-position: center; /* Centre l’image */
+    }
+
+    /* Introduction */
+    #introduction {
+        width: 90%;
+    }
+
+    .bloc_introduction {
+        grid-template-columns: 1fr; /* Une colonne sur tablette */
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* 40px en rem */
+    }
+
+    .textIntroduction {
+        font-size: 1.125rem; /* 18px en rem */
+    }
+
+    .photo_profil {
+        max-width: 100%; /* Remplir l’écran */
+    }
+
+    /* Services */
+    #services {
+        padding-top: 4rem;
+    }
+
+    #titreH3services {
+        width: 90%;
+        font-size: 1.75rem; /* 28px en rem */
+    }
+
+    .titreh2Services {
+        width: 80%;
+        font-size: 2.5rem; /* 40px en rem */
+        padding-top: 2rem;
+    }
+
+    .detail_services {
+        width: 90%;
+        gap: 2.5rem; /* 40px en rem */
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        flex-direction: column; /* Empile les blocs verticalement */
+    }
+
+    .bloc_details_services {
+        width: 100%; /* Chaque bloc prend toute la largeur */
+    }
+
+    .bloc_details_services img {
+        width: 4.375rem; /* 70px en rem */
+        height: 4.375rem; /* 70px en rem */
+    }
+
+    /* Projet (Carrousel) */
+    .container {
+        max-width: 90%;
+        padding: 2rem 0;
+    }
+
+    .rooms {
+        --items: 1; /* Un article par ligne sur tablette */
+        --gap: 1rem;
+    }
+
+    .room {
+        min-width: calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
+    }
+
+    .rooms_navigation {
+        width: 2.5rem; /* 40px en rem */
+        height: 2.5rem; /* 40px en rem */
+        top: calc(50% - 1.25rem); /* 20px en rem */
+    }
+
+    .rooms_navigation.prev {
+        left: -1.5625rem; /* 25px en rem */
+    }
+
+    .rooms_navigation.next {
+        right: -1.5625rem; /* 25px en rem */
+    }
+
+    .imageProjet {
+        width: 100%;
+        height: 12.5rem;
+        object-fit: cover;
+    }
+
+    /* Présentation */
+    #sectionPresentation {
+        padding: 2rem 0;
+    }
+
+    .blocPresentation {
+        width: 90%;
+    }
+
+    .textPresentation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .textPresentation h2 {
+        font-size: 1.875rem; /* 30px en rem */
+    }
+
+    .textPresentation p {
+        width: 100%;
+        font-size: 1rem; /* 16px en rem */
+    }
+
+    /*Section sur les projets format tablettes*/
+
+    #titreH3projet{
+        display: flex;
+        margin: auto;
+        font-size: 1.5rem;
+        font-family: 'Plus+Jakarta+Sans', sans-serif;
+        background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 22% auto;
+        text-transform: uppercase;
+    }
+
+    .bloc_projet h2 {
+        font-family: 'Plus+Jakarta+Sans', sans-serif;
+        font-size: 1.5rem;
+        width: 33.25rem;
+    }
+
+    .blocLienProjet {
+        position: relative;
+        display: inline-block;
+    }
+
+    .blocLienProjet::before {
+        content: "";
+        position: absolute;
+        top: 0.3125rem;
+        left: 0.5rem;
+        width: 100%;
+        height: 43%;
+        background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+        z-index: -1;
+        transition: transform 0.3sease-in-out;
+    }
+
+    .boutonProjet {
+        position: relative;
+        background-color: black;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        display: inline-block;
+        overflow: hidden;
+        transition: transform 0.3sease-in-out;
+        z-index: 1;
+    }
+
+    .bloc_container-image-projet {
+        width: 90%;
+        gap: 1.25rem; /* 20px en rem */
+        flex-direction: column; /* Empile les images verticalement */
+    }
+
+    .bloc_image_projet {
+        width: 100%;
+        height: 18.75rem; /* 300px en rem */
+    }
+
+    /*Fin section projet*/
+
+    /*Section Expérience Professionnelle */
+
+    #ExperiencePro {
+        padding: 2rem 0;
+    }
+
+    .titreH3experience {
+        font-size: 1.5rem; /* 24px en rem */
+    }
+
+    .bloctitreExperience {
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .experience-container {
+        max-width: 90%;
+    }
+
+    .experience-group {
+        display: block; /* Empile les blocs verticalement */
+    }
+
+    .experience-block {
+        grid-template-columns: 1fr; /* Une colonne par bloc */
+        gap: 0.5rem;
+        margin-bottom: .5rem; /* Espacement entre les blocs */
+    }
+
+    .subtext, .role {
+        font-size: 0.7rem;
+    }
+
+    .experience-block:last-child {
+        margin-bottom: 0; /* Supprime l’espacement pour le dernier bloc */
+    }
+
+    .bloctitreExperience h3:first-child {
+        margin-top: 0;
+    }
+
+    .bloctitreExperience h3:last-child {
+        margin-bottom: 1rem;
+    }
+
+    /*Fin Section Expérience Professionnelle */
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    footer h2 {
+        font-size: 1.5rem; /* 24px en rem */
+        text-align: center;
+    }
+
+    .bloc_coordonees {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .bloc_coordonees ul {
+        margin: 0;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    .header {
+        padding-top: 15px;
+    }
+
+    #Bloc_header {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar ul {
+        gap: 0.5rem;
+    }
+
+    #Bloc_logo {
+        width: 150px;
+    }
+
+    /* Introduction */
+    #introduction {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.875rem; /* 30px en rem */
+    }
+
+    .textIntroduction {
+        font-size: 1rem; /* 16px en rem */
+    }
+
+    /* Services */
+    #services {
+        padding-top: 3rem;
+    }
+
+    #titreH3services {
+        width: 95%;
+        font-size: 1.25rem; /* 20px en rem */
+    }
+
+    .titreh2Services {
+        width: 90%;
+        font-size: 1.875rem; /* 30px en rem */
+        padding-top: 1rem;
+    }
+
+    .bloc_projet h2 {
+        font-family: 'Plus+Jakarta+Sans', sans-serif;
+        font-size: 1rem;
+        width: 20.25rem;
+    }
+
+    .blocLienProjet {
+        display: none;
+    }
+
+    .detail_services {
+        width: 95%;
+        gap: 1.25rem; /* 20px en rem */
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .bloc_details_services img {
+        width: 3.125rem; /* 50px en rem */
+        height: 3.125rem; /* 50px en rem */
+    }
+
+    .bloc_details_services h3 {
+        font-size: 1.125rem; /* 18px en rem */
+    }
+
+    .bloc_details_services p, .bloc_details_services ul {
+        font-size: 0.875rem; /* 14px en rem */
+        line-height: 1.5rem;
+    }
+
+    /* Projet (Carrousel) */
+    .container {
+        max-width: 95%;
+        padding: 1rem 0;
+    }
+
+    .rooms {
+        --items: 1;
+        --gap: 0.5rem;
+    }
+
+    .room {
+        min-width: 15.625rem; /* 250px en rem */
+    }
+
+    .rooms_navigation {
+        width: 1.875rem; /* 30px en rem */
+        height: 1.875rem; /* 30px en rem */
+        top: calc(50% - 0.9375rem); /* 15px en rem */
+    }
+
+    .rooms_navigation.prev {
+        left: 0.75rem; /* 20px en rem */
+    }
+
+    .rooms_navigation.next {
+        right: -0.25rem; /* 20px en rem */
+    }
+
+    .imageProjet {
+        width: 15.625rem; /* 250px en rem */
+        height: 9.375rem; /* 150px en rem */
+    }
+
+    #titreH4projet {
+        font-size: 1rem; /* 16px en rem */
+    }
+
+    .room h5 {
+        font-size: 1.125rem; /* 18px en rem */
+        margin: 0.625rem 0; /* 10px en rem */
+    }
+
+    /* Présentation */
+    #sectionPresentation {
+        padding: 1rem 0;
+    }
+
+    .blocPresentation {
+        width: 95%;
+    }
+
+    .textPresentation h2 {
+        font-size: 1.5rem; /* 24px en rem */
+    }
+
+    .textPresentation p {
+        font-size: 0.875rem; /* 14px en rem */
+    }
+
+    .bloc_image_projet {
+        height: 12.5rem; /* 200px en rem */
+    }
+
+    .Bloc_image_projet_column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.0625rem;
+        height: 26.25rem;
+    }
+
+    /* Expérience Professionnelle */
+    #ExperiencePro {
+        padding: 1rem 0;
+    }
+
+    .bloctitreExperience {
+        width: 95%;
+        gap: 0.5rem;
+    }
+
+    .titreH3experience {
+        font-size: 1.125rem; /* 18px en rem */
+    }
+
+    .experience-container {
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-block {
+        gap: 0.5rem;
+    }
+
+    .left-section h4, .right-section h4 {
+        font-size: 0.9em;
+    }
+
+    .subtext, .role, .date {
+        font-size: 0.8em;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    footer h3 {
+        width: 80%;
+        font-family: 'Plus+Jakarta+Sans', sans-serif;
+        font-size: 1.875rem;
+        color: white;
+        margin: auto;
+        padding: 3rem 0 1.875rem 0;
+    }
+
+    footer h2 {
+        font-size: 1.125rem; /* 18px en rem */
+    }
+
+    .bloc_coordonees {
+        gap: 1rem;
+    }
+
+    .bloc_coordonees ul {
+        line-height: 1.5rem;
+        font-size: 0.8rem; /* 16px en rem */
+    }
+}

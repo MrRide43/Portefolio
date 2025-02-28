@@ -1,0 +1,117 @@
+#formulaireContact {
+    padding: 6rem 0;
+}
+
+.flexContact {
+    width: 80%; /* Conserver une largeur globale large */
+    margin: auto;
+    display: grid; /* Changé en grid pour mieux gérer les largeurs */
+    grid-template-columns: 40% 60%; /* 40% pour la gauche, 60% pour le formulaire */
+    gap: 4rem; /* Espacement entre les colonnes, similaire à l’ancien gap dans flex */
+}
+
+/* Section Gauche Formulaire de contact */
+.sectionGauchecontact {
+    max-width: 500px; /* Revenu à 500px comme demandé */
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+.sectionGauchecontact p {
+    line-height: 2rem;
+}
+
+.titreContact {
+    margin: 0;
+    font-size: 3.75rem;
+    padding: 0 0 3rem 0;
+}
+
+.CoordoneesContact {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Fin Section Gauche Formulaire de contact */
+
+/* Section droite Formulaire de contact */
+.contact-form {
+    max-width: 100%; /* Permet au formulaire de prendre toute la largeur disponible (60% du grid) */
+    font-family: 'Plus+Jakarta+Sans', sans-serif; /* Même police que ton projet */
+    color: #000000; /* Texte noir comme sur la capture */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espacement entre les champs */
+}
+
+.form-group label {
+    display: block; /* Labels en haut des champs */
+    font-size: 16px; /* Taille du texte des labels */
+    margin-bottom: 0.5rem; /* Espacement entre label et champ */
+    font-weight: bold; /* Pour un style net comme sur la capture */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Largeur complète du conteneur */
+    padding: 0.75rem; /* Padding interne comme sur la capture */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis légers */
+    background-color: #f0f4f8; /* Fond gris clair comme sur la capture */
+    font-size: 14px; /* Taille du texte dans les champs */
+    color: #666666; /* Texte gris dans les placeholders */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+    resize: vertical; /* Permet de redimensionner la textarea verticalement */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; /* Supprime le contour par défaut */
+    box-shadow: 0 0 0 2px #b16cea; /* Ombre légère au focus, couleur violette pour contraste */
+}
+
+.form-group textarea {
+    height: 120px; /* Hauteur initiale pour la textarea */
+    min-height: 80px; /* Hauteur minimale */
+    max-height: 200px; /* Hauteur maximale pour éviter un redimensionnement excessif */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999; /* Couleur des placeholders légèrement plus claire */
+    opacity: 0.8; /* Légère transparence */
+}
+
+/* Ajustement pour les champs Prénom et Nom de famille l’un en dessous de l’autre */
+.contact-form .form-group:nth-child(1),
+.contact-form .form-group:nth-child(2) {
+    width: 100%; /* Chaque champ prend toute la largeur */
+}
+
+/* Fin Section droite Formulaire de contact */
+
+/* Media Queries (en bas du fichier) */
+@media (max-width: 768px) {
+    .flexContact {
+        grid-template-columns: 1fr; /* Une colonne pour les tablettes */
+        gap: 2rem;
+    }
+
+    .titreContact {
+        font-size: 40px; /* Réduire la taille du titre */
+    }
+
+    .sectionGauchecontact, .contact-form {
+        max-width: 100%; /* Remplir l’écran */
+    }
+}
+
+@media (max-width: 480px) {
+    .flexContact {
+        width: 90%; /* Plus large sur mobile */
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 0.5rem; /* Réduire le padding sur mobile */
+    }
+}
