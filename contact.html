@@ -49,28 +49,29 @@
                     <p>06.32.74.85.10</p>
                 </div>
             </div>
-
-            <div class="contact-form">
-                <div class="form-group">
-                    <label for="prenom" aria-label="Votre prénom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            <form action="https://formspree.io/f/meoaojyq" method="post">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="prenom" aria-label="Votre prénom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom" aria-label="Votre Nom">Nom de famille</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom de famille" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" aria-label="Votre mail">Votre e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" aria-label="Votre message">Dis-moi un peu plus ce que vous recherchez ?</label>
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="blocLienIntro">
+                        <a href="" class="boutonIntro">Envoyé !</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="nom" aria-label="Votre Nom">Nom de famille</label>
-                    <input type="text" id="nom" name="nom" placeholder="Nom de famille" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" aria-label="Votre mail">Votre e-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" aria-label="Votre message">Dis-moi un peu plus ce que vous recherchez ?</label>
-                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-                </div>
-                <div class="blocLienIntro">
-                    <a href="" class="boutonIntro">Envoyé !</a>
-                </div>
-            </div>        
+            </form>      
         </div>
     </section>
 
