@@ -455,6 +455,8 @@ h1 {
 
 .bloc_container-image-projet {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1.25rem; /* 20px en rem */
     margin: auto;
     width: 80%;
