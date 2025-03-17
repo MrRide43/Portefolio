@@ -64,3 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
+
+  //code pour animation FAQ
+
+document.addEventListener("DOMContentLoaded", function() {
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+    // Basculer la classe active sur le conteneur de l'item FAQ
+    item.classList.toggle('active');
+    });
+});
+});
+  

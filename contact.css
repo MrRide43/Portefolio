@@ -90,6 +90,60 @@
 
 /* Fin Section droite Formulaire de contact */
 
+/* Début Section FAQ contact */
+
+/* Style général de la FAQ */
+#faq {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 0 1rem 2rem 1rem;
+    font-family: 'Plus+Jakarta+Sans', sans-serif; /* Même police que ton projet */
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 3px 3px 10px;
+}
+
+#faq h2 {
+    text-align: center;
+    font-size: 3.75rem;
+    color: white;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    color: white;
+}
+
+/* Bouton question */
+.faq-question {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+/* Réponse cachée par défaut */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Quand la FAQ est active, on montre la réponse */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Ajuste la hauteur selon le contenu, ou calcule-la dynamiquement */
+}
+
+/*Fin Style général de la FAQ */
+
+
 /* Media Queries (en bas du fichier) */
 @media (max-width: 768px) {
     .flexContact {
