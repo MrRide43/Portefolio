@@ -146,6 +146,7 @@
 
 /* Media Queries (en bas du fichier) */
 @media (max-width: 768px) {
+    /*section formulaire de contacte*/
     .flexContact {
         grid-template-columns: 1fr; /* Une colonne pour les tablettes */
         gap: 2rem;
@@ -158,6 +159,15 @@
     .sectionGauchecontact, .contact-form {
         max-width: 100%; /* Remplir l’écran */
     }
+
+    /*Section FAQ*/
+
+    #faq h2 {
+        text-align: center;
+        font-size: 2.75rem;
+        color: white;
+    }
+
 }
 
 @media (max-width: 480px) {

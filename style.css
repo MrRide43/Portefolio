@@ -24,6 +24,45 @@ body {
     padding-left: 1rem;
 }
 
+/* Styles du menu burger */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles du menu burger */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
 #navbar ul {
     display: flex;
     align-items: center;
@@ -701,18 +740,12 @@ footer h3 {
         padding-left: 0;
     }
 
-    #navbar ul {
-        flex-direction: row;
-        gap: 1rem;
-        padding: 0;
-    }
-
-    .Bloc_Lien_animationFlèche {
-        margin-top: 0;
-    }
+    .burger-menu {
+        display: none;
+    }   
 
     #Bloc_logo {
-        margin-top: 10px;
+        margin-top: 0;
         width: 150px; /* Réduire la taille du logo */
         height: 50px;
         background-image: url(image/logo_new_alexis.webp);
@@ -720,6 +753,12 @@ footer h3 {
         background-repeat: no-repeat; /* Évite la répétition */
         background-position: center; /* Centre l’image */
     }
+
+    #navbar ul {
+        gap: 2rem;
+    }
+
+    /*Fin Header */
 
     /* Introduction */
     #introduction {
@@ -985,8 +1024,48 @@ footer h3 {
         flex-direction: column;
     }
 
+    /* Affiche le burger menu uniquement en dessous de 480px */
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    /* Ajoute une icône (ou trois barres) */
+    .burger-menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Cacher le menu */
     #navbar ul {
-        gap: 0.5rem;
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .Lien_navbar {
+        color: white;
+    }
+
+    /* Afficher le menu quand il est actif */
+    #navbar ul.active {
+        display: flex;
+        width: 100%;
+    }
+
+    .Bloc_Lien_animationFlèche img {
+        display: none;
     }
 
     #Bloc_logo {
