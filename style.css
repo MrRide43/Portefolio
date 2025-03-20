@@ -235,7 +235,7 @@ h1 {
 }
 
 .titreh2Services {
-    width: 55%;
+    width: 56%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -295,7 +295,7 @@ h1 {
 
 .bloc_projet h2 {
     font-family: 'Plus+Jakarta+Sans', sans-serif;
-    font-size: 2.8125rem; /* 45px en rem */
+    font-size: 2.4rem; /* 45px en rem */
     width: 49.25rem; /* 500px en rem */
 }
 
@@ -332,7 +332,7 @@ h1 {
     top: 0.3125rem; /* 5px en rem */
     left: 0.5rem; /* 8px en rem */
     width: 100%;
-    height: 27%;
+    height: 31%;
     background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
     z-index: -1;
     transition: transform 0.3s ease-in-out;
@@ -486,6 +486,7 @@ h1 {
     width: 60.625rem; /* 330px en rem */
     font-size: 1.25rem; /* 20px en rem */
     color: white;
+    text-align: justify;
 }
 
 .textPresentation h2 {
@@ -837,11 +838,11 @@ footer h3 {
     }
 
     .rooms_navigation.prev {
-        left: -1.5625rem; /* 25px en rem */
+        left: 0.7rem; /* 25px en rem */
     }
 
     .rooms_navigation.next {
-        right: -1.5625rem; /* 25px en rem */
+        right: 0.7rem; /* 25px en rem */
     }
 
     .imageProjet {
@@ -884,7 +885,7 @@ footer h3 {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        background-size: 22% auto;
+        background-size: 35% auto;
         text-transform: uppercase;
     }
 
@@ -1093,6 +1094,10 @@ footer h3 {
     #titreH3services {
         width: 95%;
         font-size: 1.25rem; /* 20px en rem */
+        background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+        background-clip: text;
+        color: transparent;
+        background-size: 20% auto;
     }
 
     .titreh2Services {
@@ -1112,7 +1117,7 @@ footer h3 {
     }
 
     .detail_services {
-        width: 95%;
+        width: 76%;
         gap: 1.25rem; /* 20px en rem */
         padding-top: 1rem;
         padding-bottom: 3rem;
@@ -1190,6 +1195,7 @@ footer h3 {
 
     .textPresentation p {
         font-size: 0.875rem; /* 14px en rem */
+        width: 94%;
     }
 
     .bloc_image_projet {
