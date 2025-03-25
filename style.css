@@ -102,6 +102,7 @@ body {
     margin-top: 17px;
 }
 
+
 /* Fin Section header */
 
 /* Section introduction */
@@ -491,6 +492,13 @@ h1 {
 
 .textPresentation h2 {
     font-size: 2.5rem; /* 40px en rem */
+    margin: 6rem 0 3rem 0;
+    background: linear-gradient(to right, #b16cea, #ff5e69, #ff8e56, #ffa87b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: 'Plus+Jakarta+Sans', sans-serif;
 }
 
 .bloc_container-image-projet {
@@ -644,6 +652,13 @@ h1 {
 footer {
     background-color: black;
     padding: 0 0 1.875rem 0; /* 30px en rem */
+}
+
+.bloc_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 
 footer h3 {
